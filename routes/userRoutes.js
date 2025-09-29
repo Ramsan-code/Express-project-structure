@@ -8,7 +8,7 @@ router.get("/:id", (req, res) => {
   res.send("this is get one user");
 });
 router.post("/", (req, res) => {
-  res.send("this is get  user");
+  res.send("this is post  user");
 });
 router.put("/:id", (req, res) => {
   res.send("this is put user");
