@@ -10,9 +10,23 @@ const PORT = 3000;
 app.get("/", (req, res) => {
   res.send("hello express");
 });
-router.get("/user", (req, res) => {
+
+router.get("/users", (req, res) => {
   res.send("this is get user");
 });
+router.get("/users/:id", (req, res) => {
+  res.send("this is get one user");
+});
+router.post("/users", (req, res) => {
+  res.send("this is get  user");
+});
+router.put("/users/:id", (req, res) => {
+  res.send("this is put user");
+});
+router.delete("/users/:id", (req, res) => {
+  res.send("this is delete user");
+});
+
 app.use(router);
 
 app.listen(PORT, () => {
