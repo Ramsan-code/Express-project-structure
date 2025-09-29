@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 router.get("/user", (req, res) => {
   res.send("this is get user");
 });
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
